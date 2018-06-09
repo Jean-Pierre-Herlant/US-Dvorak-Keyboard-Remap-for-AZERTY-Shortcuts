@@ -31,15 +31,15 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 *^-::Send ^'
 
 *^`;::Send ^w
-*^q::Send ^x
-*^j::Send ^c
-*^k::Send ^v
-*^x::Send ^b
-*^b::Send ^n
-*^m::Send ^m
-*^w::Send ^,
-*^v::Send ^.
-*^z::Send ^/
+*^q::Send  ^x
+*^j::Send  ^c
+*^k::Send  ^v
+*^x::Send  ^b
+*^b::Send  ^n
+*^m::Send  ^m
+*^w::Send  ^,
+*^v::Send  ^.
+*^z::Send  ^/
 
 
 ;ALT KEY
@@ -70,15 +70,15 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 *!-::Send !'
 
 *!`;::Send !w
-*!q::Send !x
-*!j::Send !c
-*!k::Send !v
-*!x::Send !b
-*!b::Send !n
-*!m::Send !m
-*!w::Send !,
-*!v::Send !.
-*!z::Send !/
+*!q::Send  !x
+*!j::Send  !c
+*!k::Send  !v
+*!x::Send  !b
+*!b::Send  !n
+*!m::Send  !m
+*!w::Send  !,
+*!v::Send  !.
+*!z::Send  !/
 
 
 ;WINDOWS KEY
@@ -109,16 +109,54 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 *#-::Send #'
 
 *#`;::Send #w
-*#q::Send #x
-*#j::Send #c
-*#k::Send #v
-*#x::Send #b
-*#b::Send #n
-*#m::Send #m
-*#w::Send #,
-*#v::Send #.
-*#z::Send #/
+*#q::Send  #x
+*#j::Send  #c
+*#k::Send  #v
+*#x::Send  #b
+*#b::Send  #n
+*#m::Send  #m
+*#w::Send  #,
+*#v::Send  #.
+*#z::Send  #/
 
+
+;Ctrl + shift
+
+^+'::Send ^+a
+^+,::Send ^+z
+^+.::Send ^+e
+^+p::Send ^+r
+^+y::Send ^+t
+^+f::Send ^+y
+^+g::Send ^+u
+^+c::Send ^+i
+^+r::Send ^+o
+^+l::Send ^+p
+^+/::Send ^+[
+^+=::Send ^+]
+
+^+a::Send ^+q
+^+o::Send ^+s
+^+e::Send ^+d
+^+u::Send ^+f
+^+i::Send ^+g
+^+d::Send ^+h
+^+h::Send ^+j
+^+t::Send ^+k
+^+n::Send ^+l
+^+s::Send ^+`;
+^+-::Send ^+'
+
+^+`;::Send ^+w
+^+q::Send  ^+x
+^+j::Send  ^+c
+^+k::Send  ^+v
+^+x::Send  ^+b
+^+b::Send  ^+n
+^+m::Send  ^+m
+^+w::Send  ^+,
+^+v::Send  ^+.
+^+z::Send  ^+/
 
 ;ALTGR KEY
 
@@ -127,38 +165,39 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 <^>!.::Send ê
 <^>!p::Send û
 <^>!y::Send î
-<^>!f::Send €
-<^>!g::Send #u
-<^>!c::Send #i
-<^>!r::Send #o
-<^>!l::Send #p
-<^>!/::Send #[
-<^>!=::Send #]
+;<^>!f::Send €
+;<^>!g::Send    
+;<^>!c::Send    
+;<^>!r::Send    
+;<^>!l::Send    
+;<^>!/::Send    
+;<^>!=::Send
+<^>!\::Send €    
 
 <^>!a::Send à
 <^>!o::Send é
 <^>!e::Send è
 <^>!u::Send ù
 <^>!i::Send ç
-<^>!d::Send #h
-<^>!h::Send #j
-<^>!t::Send #k
-<^>!n::Send #l
-<^>!s::Send #`;
-<^>!-::Send #'
+;<^>!d::Send
+;<^>!h::Send
+;<^>!t::Send
+;<^>!n::Send
+;<^>!s::Send
+;<^>!-::Send
 
 <^>!`;::Send æ
-<^>!q::Send œ
-<^>!j::Send ë
-<^>!k::Send ü
-<^>!x::Send ï
-<^>!b::Send ÿ
-<^>!m::Send #m
-<^>!w::Send #,
-<^>!v::Send #.
-<^>!z::Send #/
+<^>!q::Send  œ
+<^>!j::Send  ë
+<^>!k::Send  ü
+<^>!x::Send  ï
+<^>!b::Send  ÿ ;not ideal when touchtyping but very rarely used in French.
+;<^>!m::Send
+;<^>!w::Send
+;<^>!v::Send
+;<^>!z::Send
 
-;Capslock
+;ALTGR with capslock on
 #If GetKeyState("CapsLock", "T")
 
 <^>!'::Send Â
@@ -166,33 +205,34 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 <^>!.::Send Ê
 <^>!p::Send Û
 <^>!y::Send Î
-<^>!f::Send €
+;<^>!f::Send 
 ;<^>!g::Send
 ;<^>!c::Send 
 ;<^>!r::Send 
 ;<^>!l::Send 
 ;<^>!/::Send 
 ;<^>!=::Send
+<^>!\::Send €
 
 <^>!a::Send À
 <^>!o::Send É
 <^>!e::Send È
 <^>!u::Send Ù
 <^>!i::Send Ç
-;<^>!d::Send #h
-;<^>!h::Send #j
-;<^>!t::Send #k
-;<^>!n::Send #l
-;<^>!s::Send #`;
-;<^>!-::Send #'
+;<^>!d::Send 
+;<^>!h::Send 
+;<^>!t::Send 
+;<^>!n::Send 
+;<^>!s::Send 
+;<^>!-::Send 
 
 <^>!`;::Send Æ
-<^>!q::Send Œ
-<^>!j::Send Ë
-<^>!k::Send Ü
-<^>!x::Send Ï
-<^>!b::Send Ÿ
-;<^>!m::Send #m
-;<^>!w::Send #,
-;<^>!v::Send #.
-;<^>!z::Send #/
+<^>!q::Send  Œ
+<^>!j::Send  Ë
+<^>!k::Send  Ü
+<^>!x::Send  Ï
+<^>!b::Send  Ÿ ;Doesn't exist in French, unless you're all capping a name
+;<^>!m::Send 
+;<^>!w::Send 
+;<^>!v::Send 
+;<^>!z::Send 
