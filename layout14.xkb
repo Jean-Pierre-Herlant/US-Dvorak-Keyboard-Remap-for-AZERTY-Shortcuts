@@ -1,3 +1,7 @@
+default partial alphanumeric_keys
+xkb_symbols "dvorak" { 
+
+	key <TLDE> { [ grave, asciitilde ]}
 	key <AE01> { [ 1, U0021, NoSymbol, NoSymbol ] }; // DIGIT ONE, EXCLAMATION MARK, <none>, <none>, <none>
 	key <AE02> { [ 2, U0040, NoSymbol, NoSymbol ] }; // DIGIT TWO, COMMERCIAL AT, <none>, <none>, <none>
 	key <AE03> { [ 3, U0023, NoSymbol, NoSymbol ] }; // DIGIT THREE, NUMBER SIGN, <none>, <none>, <none>
@@ -48,3 +52,5 @@
 	key <SPCE> { [ U0020, U0020, NoSymbol, NoSymbol ] }; // SPACE, SPACE, SPACE, <none>, <none>
 	key <LSGT> { [ U005c, U007c, NoSymbol, NoSymbol ] }; // REVERSE SOLIDUS, VERTICAL LINE, INFORMATION SEPARATOR FOUR, <none>, <none>
 	key <KPDL> { [ U002e, U002e, NoSymbol, NoSymbol ] }; // FULL STOP, FULL STOP, , ,
+
+}
