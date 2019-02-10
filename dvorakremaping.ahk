@@ -5,9 +5,6 @@
 SetWorkingDir %A_ScriptDir%  
 SendMode Input  
 
-RAlt:: AltGR := false
-RAlt Up:: AltGR := true
-
 ;WINDOWS KEY
 *#'::Send #a
 *#,::Send #z
@@ -45,7 +42,8 @@ RAlt Up:: AltGR := true
 *#v::Send  #.
 *#z::Send  #/
 
-#If (AltGR)
+#If !GetKeyState("RAlt", "P")
+
 ;CTRL KEY
 *^'::Send ^a
 *^,::Send ^z
