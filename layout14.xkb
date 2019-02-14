@@ -1,56 +1,62 @@
-default partial alphanumeric_keys
-xkb_symbols "dvorak" { 
+partial alphanumeric_keys
+xkb_symbols "dvorak-fr" {
 
-	key <TLDE> { [ grave, asciitilde ]}
-	key <AE01> { [ 1, U0021, NoSymbol, NoSymbol ] }; // DIGIT ONE, EXCLAMATION MARK, <none>, <none>, <none>
-	key <AE02> { [ 2, U0040, NoSymbol, NoSymbol ] }; // DIGIT TWO, COMMERCIAL AT, <none>, <none>, <none>
-	key <AE03> { [ 3, U0023, NoSymbol, NoSymbol ] }; // DIGIT THREE, NUMBER SIGN, <none>, <none>, <none>
-	key <AE04> { [ 4, U0024, NoSymbol, NoSymbol ] }; // DIGIT FOUR, DOLLAR SIGN, <none>, <none>, <none>
-	key <AE05> { [ 5, U0025, NoSymbol, NoSymbol ] }; // DIGIT FIVE, PERCENT SIGN, <none>, <none>, <none>
-	key <AE06> { [ 6, U005e, NoSymbol, NoSymbol ] }; // DIGIT SIX, CIRCUMFLEX ACCENT, <none>, <none>, <none>
-	key <AE07> { [ 7, U0026, NoSymbol, NoSymbol ] }; // DIGIT SEVEN, AMPERSAND, <none>, <none>, <none>
-	key <AE08> { [ 8, U002a, NoSymbol, NoSymbol ] }; // DIGIT EIGHT, ASTERISK, <none>, <none>, <none>
-	key <AE09> { [ 9, U0028, NoSymbol, NoSymbol ] }; // DIGIT NINE, LEFT PARENTHESIS, <none>, <none>, <none>
-	key <AE10> { [ 0, U0029, NoSymbol, NoSymbol ] }; // DIGIT ZERO, RIGHT PARENTHESIS, <none>, <none>, <none>
-	key <AD11> { [ U005b, U007b, NoSymbol, NoSymbol ] }; // LEFT SQUARE BRACKET, LEFT CURLY BRACKET, ESCAPE, <none>, <none>
-	key <AD12> { [ U005d, U007d, NoSymbol, NoSymbol ] }; // RIGHT SQUARE BRACKET, RIGHT CURLY BRACKET, INFORMATION SEPARATOR THREE, <none>, <none>
-	key <AC11> { [ U0027, U0022, U00e2, U00c2 ] }; // APOSTROPHE, QUOTATION MARK, <none>, LATIN SMALL LETTER A WITH CIRCUMFLEX, LATIN CAPITAL LETTER A WITH CIRCUMFLEX
-	key <AB08> { [ U002c, U003c, U00f4, U00d4 ] }; // COMMA, LESS-THAN SIGN, <none>, LATIN SMALL LETTER O WITH CIRCUMFLEX, LATIN CAPITAL LETTER O WITH CIRCUMFLEX
-	key <AB09> { [ U002e, U003e, U00ea, U00ca ] }; // FULL STOP, GREATER-THAN SIGN, <none>, LATIN SMALL LETTER E WITH CIRCUMFLEX, LATIN CAPITAL LETTER E WITH CIRCUMFLEX
-	key <AD10> { [ p, P, U00fb, U00db ] }; // LATIN SMALL LETTER P, LATIN CAPITAL LETTER P, <none>, LATIN SMALL LETTER U WITH CIRCUMFLEX, LATIN CAPITAL LETTER U WITH CIRCUMFLEX
-	key <AD06> { [ y, Y, U00ee, U00ce ] }; // LATIN SMALL LETTER Y, LATIN CAPITAL LETTER Y, <none>, LATIN SMALL LETTER I WITH CIRCUMFLEX, LATIN CAPITAL LETTER I WITH CIRCUMFLEX
-	key <AC04> { [ f, F, NoSymbol, NoSymbol ] }; // LATIN SMALL LETTER F, LATIN CAPITAL LETTER F, <none>, <none>, <none>
-	key <AC05> { [ g, G, NoSymbol, NoSymbol ] }; // LATIN SMALL LETTER G, LATIN CAPITAL LETTER G, <none>, <none>, <none>
-	key <AB03> { [ c, C, NoSymbol, NoSymbol ] }; // LATIN SMALL LETTER C, LATIN CAPITAL LETTER C, <none>, <none>, <none>
-	key <AD04> { [ r, R, NoSymbol, NoSymbol ] }; // LATIN SMALL LETTER R, LATIN CAPITAL LETTER R, <none>, <none>, <none>
-	key <AC09> { [ l, L, U20ac, U20ac ] }; // LATIN SMALL LETTER L, LATIN CAPITAL LETTER L, <none>, EURO SIGN, EURO SIGN
-	key <AB10> { [ U002f, U003f, NoSymbol, NoSymbol ] }; // SOLIDUS, QUESTION MARK, <none>, <none>, <none>
-	key <AE12> { [ U003d, U002b, NoSymbol, NoSymbol ] }; // EQUALS SIGN, PLUS SIGN, <none>, <none>, <none>
-	key <AC01> { [ a, A, U00e0, U00c0 ] }; // LATIN SMALL LETTER A, LATIN CAPITAL LETTER A, <none>, LATIN SMALL LETTER A WITH GRAVE, LATIN CAPITAL LETTER A WITH GRAVE
-	key <AD09> { [ o, O, U00e9, U00c9 ] }; // LATIN SMALL LETTER O, LATIN CAPITAL LETTER O, <none>, LATIN SMALL LETTER E WITH ACUTE, LATIN CAPITAL LETTER E WITH ACUTE
-	key <AD03> { [ e, E, U00e8, U00c8 ] }; // LATIN SMALL LETTER E, LATIN CAPITAL LETTER E, <none>, LATIN SMALL LETTER E WITH GRAVE, LATIN CAPITAL LETTER E WITH GRAVE
-	key <AD07> { [ u, U, U00f9, U00d9 ] }; // LATIN SMALL LETTER U, LATIN CAPITAL LETTER U, <none>, LATIN SMALL LETTER U WITH GRAVE, LATIN CAPITAL LETTER U WITH GRAVE
-	key <AD08> { [ i, I, U00e7, U00c7 ] }; // LATIN SMALL LETTER I, LATIN CAPITAL LETTER I, <none>, LATIN SMALL LETTER C WITH CEDILLA, LATIN CAPITAL LETTER C WITH CEDILLA
-	key <AC03> { [ d, D, NoSymbol, NoSymbol ] }; // LATIN SMALL LETTER D, LATIN CAPITAL LETTER D, <none>, <none>, <none>
-	key <AC06> { [ h, H, NoSymbol, NoSymbol ] }; // LATIN SMALL LETTER H, LATIN CAPITAL LETTER H, <none>, <none>, <none>
-	key <AD05> { [ t, T, NoSymbol, NoSymbol ] }; // LATIN SMALL LETTER T, LATIN CAPITAL LETTER T, <none>, <none>, <none>
-	key <AB06> { [ n, N, NoSymbol, NoSymbol ] }; // LATIN SMALL LETTER N, LATIN CAPITAL LETTER N, <none>, <none>, <none>
-	key <AC02> { [ s, S, NoSymbol, NoSymbol ] }; // LATIN SMALL LETTER S, LATIN CAPITAL LETTER S, <none>, <none>, <none>
-	key <AE11> { [ U002d, U005f, NoSymbol, NoSymbol ] }; // HYPHEN-MINUS, LOW LINE, <none>, <none>, <none>
-	key <TLDE> { [ U0060, U007e, NoSymbol, NoSymbol ] }; // GRAVE ACCENT, TILDE, <none>, <none>, <none>
-	key <BKSL> { [ U005c, U007c, NoSymbol, NoSymbol ] }; // REVERSE SOLIDUS, VERTICAL LINE, INFORMATION SEPARATOR FOUR, <none>, <none>
-	key <AC10> { [ U003b, U003a, U00e6, U00c6 ] }; // SEMICOLON, COLON, <none>, LATIN SMALL LETTER AE (ash) *, LATIN CAPITAL LETTER AE (ash) *
-	key <AD01> { [ q, Q, U0153, U0152 ] }; // LATIN SMALL LETTER Q, LATIN CAPITAL LETTER Q, <none>, LATIN SMALL LIGATURE OE, LATIN CAPITAL LIGATURE OE
-	key <AC07> { [ j, J, U00eb, U00cb ] }; // LATIN SMALL LETTER J, LATIN CAPITAL LETTER J, <none>, LATIN SMALL LETTER E WITH DIAERESIS, LATIN CAPITAL LETTER E WITH DIAERESIS
-	key <AC08> { [ k, K, U00fc, U00dc ] }; // LATIN SMALL LETTER K, LATIN CAPITAL LETTER K, <none>, LATIN SMALL LETTER U WITH DIAERESIS, LATIN CAPITAL LETTER U WITH DIAERESIS
-	key <AB02> { [ x, X, U00ff, U00cf ] }; // LATIN SMALL LETTER X, LATIN CAPITAL LETTER X, <none>, LATIN SMALL LETTER Y WITH DIAERESIS, LATIN CAPITAL LETTER I WITH DIAERESIS
-	key <AB05> { [ b, B, NoSymbol, U0178 ] }; // LATIN SMALL LETTER B, LATIN CAPITAL LETTER B, <none>, <none>, LATIN CAPITAL LETTER Y WITH DIAERESIS
-	key <AB07> { [ m, M, NoSymbol, NoSymbol ] }; // LATIN SMALL LETTER M, LATIN CAPITAL LETTER M, <none>, <none>, <none>
-	key <AD02> { [ w, W, NoSymbol, NoSymbol ] }; // LATIN SMALL LETTER W, LATIN CAPITAL LETTER W, <none>, <none>, <none>
-	key <AB04> { [ v, V, NoSymbol, NoSymbol ] }; // LATIN SMALL LETTER V, LATIN CAPITAL LETTER V, <none>, <none>, <none>
-	key <AB01> { [ z, Z, NoSymbol, NoSymbol ] }; // LATIN SMALL LETTER Z, LATIN CAPITAL LETTER Z, <none>, <none>, <none>
-	key <SPCE> { [ U0020, U0020, NoSymbol, NoSymbol ] }; // SPACE, SPACE, SPACE, <none>, <none>
-	key <LSGT> { [ U005c, U007c, NoSymbol, NoSymbol ] }; // REVERSE SOLIDUS, VERTICAL LINE, INFORMATION SEPARATOR FOUR, <none>, <none>
-	key <KPDL> { [ U002e, U002e, NoSymbol, NoSymbol ] }; // FULL STOP, FULL STOP, , ,
+    name[Group1]= "English (Dvorak, international with dead keys)";
 
-}
+    include "us(dvorak)"
+
+    key <TLDE> { [grave, tilde, grave, asciitilde ] };
+
+    key <AE01> { [            1,          exclam,           exclamdown,          onesuperior ] };
+    key <AE02> { [            2,              at,          twosuperior                       ] };
+    key <AE03> { [            3,      numbersign,        threesuperior,          dead_macron ] };
+    key <AE04> { [            4,          dollar,             currency,             sterling ] };
+    key <AE05> { [            5,         percent,             EuroSign                       ] }; 
+    key <AE06> { [            6, dead_circumflex,           onequarter,          asciicircum ] };
+    key <AE07> { [            7,       ampersand,              onehalf                       ] };
+    key <AE08> { [            8,        asterisk,        threequarters                       ] };
+    key <AE09> { [            9,       parenleft,  leftsinglequotemark                       ] };
+    key <AE10> { [            0,      parenright, rightsinglequotemark                       ] };
+    key <AE11> { [  bracketleft,       braceleft,        guillemotleft,  leftdoublequotemark ] };
+    key <AE12> { [ bracketright,      braceright,       guillemotright, rightdoublequotemark ] };
+
+    key <AD01> { [  U0027,    U0022,        U00e2,      U00c2 ] };
+    key <AD02> { [  comma,     less,        U00f4,      U00d4 ] };
+    key <AD03> { [ period,  greater,        U00ea,      U00ca ] };
+    key <AD04> { [      p,        P,        U00fb,      U00db ] };
+    key <AD05> { [      y,        Y,        U00ee,      U00ce ] };
+    key <AD06> { [      f,        F                           ] };
+    key <AD07> { [      g,        G                           ] };
+    key <AD08> { [      c,        C,    copyright,       cent ] };
+    key <AD09> { [      r,        R,   registered, registered ] };
+    key <AD10> { [      l,        L,       oslash,   Ooblique ] };
+    key <AD11> { [  slash, question, questiondown             ] };
+    key <AD12> { [  equal,     plus,     multiply,   division ] };
+
+    key <AC01> { [     a,          A, agrave,  Agrave ] };
+    key <AC02> { [     o,          O,  U00e9,  U00c9  ] };
+    key <AC03> { [     e,          E,  U00e8,  U00c8  ] };
+    key <AC04> { [     u,          U,  U00f9,  U00d9  ] };
+    key <AC05> { [     i,          I,  U00e7,  U00c7  ] };
+    key <AC06> { [     d,          D                  ] };
+    key <AC07> { [     h,          H                  ] };
+    key <AC08> { [     t,          T,  thorn,   THORN ] };
+    key <AC09> { [     n,          N, ntilde,  Ntilde ] };
+    key <AC10> { [     s,          S, ssharp, section ] };
+    key <AC11> { [ minus, underscore,  U00B0 ] };
+
+    key <AB01> { [ semicolon, colon, U00e6, U00c6 ] };
+    key <AB02> { [         q,     Q, U0153, U0152 ] };
+    key <AB03> { [         j,     J, U00eb, U00cb ] };
+    key <AB04> { [         k,     K, U00fc, U00dc ] };
+    key <AB05> { [         x,     X, U00ef, U00cf ] };
+    key <AB06> { [         b,     B, U00FF, U0178 ] };
+    key <AB07> { [         m,     M,    mu,    mu ] };
+    key <AB08> { [         w,     W, aring, Aring ] };
+    key <AB09> { [         v,     V               ] };
+    key <AB10> { [         z,     Z               ] };
+
+    key <BKSL> { [ backslash,        bar,       notsign,        brokenbar ] };
+
+    include "level3(ralt_switch)"
+};
